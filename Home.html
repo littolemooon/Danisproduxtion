@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danisproduxtion - Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <a href="Home.html" target="_blank">
+        <img src="logos/logo copy.png" alt="Instagram">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="herohome">
+    <h1>Capture Your Precious Moments</h1>
+    <p>Professional family portraits and creative photography tailored just for you.</p>
+    <a href="booking.html" class="cta-button">Book a Session</a>
+  </section>
+
+  <button id="scrollTopBtn">Top</button>
+
+  <!-- Photography Sessions -->
+  <section id="sessions" class="sessions">
+    <h2>Our Photography Sessions</h2>
+    <div class="portfolio-gallery">
+      <div class="portfolio-item">
+        <img src="images/cruze family/smooshes.jpg" alt="Family Portraits">
+        <p>Family Portraits</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/family sessions/bump.jpg" alt="Maternity Session">
+        <p>Maternity Sessions</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/engagement/edit5-1.JPEG" alt="Engagement Session">
+        <p>Engagements</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/Individual Portraits /DSC_7073.JPG" alt="Individual Session">
+        <p>Individual Portraits</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section id="reviews" class="reviews">
+    <h2>What Our Clients Say</h2>
+    <div class="review">
+      <blockquote>
+        "Danisproduxtion captured our family’s essence beautifully! Highly recommend!"
+        <cite>- Sarah M.</cite>
+      </blockquote>
+      <blockquote>
+        "Professional and artistic! We love our maternity shoot pictures."
+        <cite>- Emma R.</cite>
+      </blockquote>
+      <blockquote>
+        "We love our maternity shoot pictures. She captured them beautifully."
+        <cite>- Sam R.</cite>
+      </blockquote>
+      <blockquote>
+        "We love our family pictures. She captured them beautifully."
+        <cite>- Brie J.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Meet the Photographer -->
+  <section id="about" class="about">
+    <h2>Meet The Photographer</h2>
+    <img src="images/my image/usememove_3.jpg" alt="About Danisproduxtion" width="500">
+    <h2>Hello My name is Megan Lindsey</h2>
+    <p>
+      I started photography at a young age, surrounded by other fellow photographers and wanted to create and capture my own art.
+      I've been passionate about photography since the age of 12, and I officially launched my professional photography career in 2019.
+      I specialize in capturing the moments that matter most to you, and I look forward to working with you! Let’s connect!
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h2>Contact Info</h2>
+      <p>📍 1900 Glindas Ln, Emerald City, Fl 99999</p>
+      <p>📞 (555) 123-4567</p>
+      <p>📧 contact@danisproduxtion.com</p>
+      <a href="index.html">
+        <img src="logos/logo copy.png" alt="logo" width="200">
+      </a>
+    </div>
+    <div class="footer-section">
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+      <p>Saturday: 10:00 AM - 4:00 PM</p>
+      <p>Sunday: Closed</p>
+      <h2>Follow Us</h2>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="icons for web project/instagram.png" alt="Instagram" width="40">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="icons for web project/facebook.png" alt="Facebook" width="40">
+      </a>
+    </div>
+  </footer>
+
+  <!-- jQuery Script -->
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('#scrollTopBtn').fadeIn();
+        } else {
+          $('#scrollTopBtn').fadeOut();
+        }
+      });
+
+      $('#scrollTopBtn').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+      });
+
+      if (!localStorage.getItem('visited')) {
+        $('body').append(`
+          <div id="popupModal" class="popup-modal">
+            <div class="popup-content">
+              <span class="close-popup">&times;</span>
+              <h2>Welcome!</h2>
+              <p>New Clients Get <strong>15% Off</strong> Their First Booking!</p>
+              <a href="booking.html" class="cta-button">Book Now</a>
+            </div>
+          </div>
+        `);
+
+        $('.close-popup').click(function() {
+          $('#popupModal').fadeOut();
+        });
+
+        localStorage.setItem('visited', 'true');
+      }
+    });
+  </script>
+
+</body>
+</html>

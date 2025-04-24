@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Danisproduxtion</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <a href="Home.html" target="_blank">
+        <img src="logos/logo copy.png" alt="Instagram">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Image -->
+  <div class="heroport"></div>
+
+  <h1>Portfolio</h1>
+  <h2>Our favorite moments captured by Danisproduxtion</h2>
+
+  <!-- Portfolio Gallery -->
+  <div class="portfolio-gallery" id="portfolio">
+    <div class="portfolio-item">
+      <img src="images/angels gallery images /IMG_4469.JPG" alt="Family Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/cruze family/mia02.jpg" alt="Maternity Session" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/engagement/edit5-1.JPEG" alt="Engagement Session" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/newborns/IMG_3459.JPG" alt="Newborn Session" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/newborns/IMG_3463.JPG" alt="Newborn Session" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/Jaquezcrew/lindseyboys2.jpg" alt="Family Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/mixfamily/IMG_0126.JPG" alt="Maternity Session" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/bries gallery images/heroimage 2.jpg" alt="Family Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/mixfamily/DSC_1310.JPG" alt="Family Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/mixfamily/DSC_1932.JPG" alt="Family Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/newborns/DSC_7060.JPG" alt="Lifestyle Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/Individual Portraits /DSC_4158.JPG" alt="Individual Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/Individual Portraits /IMG_0669.JPG" alt="Individual Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/bries gallery images/IMG_1453.JPG" alt="Individual Portraits" class="portfolio-img" width="300px">
+    </div>
+    <div class="portfolio-item">
+      <img src="images/engagement/edit2-1.JPEG" alt="Individual Portraits" class="portfolio-img" width="300px">
+    </div>
+  </div>
+
+  <!-- Popup Modal for Image -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01" style="max-width: 500px;">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Popup Modal for Contact Us / Discount Offer -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>New Clients Get 15% Off!</h2>
+      <p>Contact us today to book your session and enjoy 15% off your first booking!</p>
+      <button onclick="window.location.href='contact.html'">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h2>Contact Info</h2>
+      <p>📍 1900 Glindas Ln, Emerald City, Fl 99999</p>
+      <p>📞 (555) 123-4567</p>
+      <p>📧 contact@danisproduxtion.com</p>
+      <a href="index.html">
+        <img src="logos/logo copy.png" alt="logo" width="200">
+      </a>
+    </div>
+
+    <div class="footer-section">
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+      <p>Saturday: 10:00 AM - 4:00 PM</p>
+      <p>Sunday: Closed</p>
+      <h2>Follow Us</h2>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="icons for web project/instagram.png" alt="Instagram" width="40">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="icons for web project/facebook.png" alt="Facebook" width="40">
+      </a>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Functionality -->
+  <script>
+    // Image Modal Functionality
+    $(document).ready(function() {
+      $(".portfolio-img").click(function() {
+        var src = $(this).attr("src");
+        $("#img01").attr("src", src);
+        $("#imageModal").show();
+      });
+
+      $(".close").click(function() {
+        $("#imageModal").hide();
+        $("#contactModal").hide();
+      });
+    });
+
+    // Smooth Scroll for Navigation
+    $("nav .nav-links a").click(function(event) {
+      if(this.hash !== "") {
+        event.preventDefault();
+        var target = this.hash;
+        $("html, body").animate({
+          scrollTop: $(target).offset().top
+        }, 800);
+      }
+    });
+
+    // Contact Us Button (Popup Modal)
+    $("#contact-btn").click(function() {
+      $("#contactModal").show();
+    });
+  </script>
+
+</body>
+</html>

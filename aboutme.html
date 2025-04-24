@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Danisproduxtion</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery for interactive elements -->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <a href="Home.html" target="_blank">
+        <img src="logos/logo copy.png" alt="Instagram">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Image -->
+  <div class="heroabout"></div>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <h1>About Me</h1>
+    <img src="images/my image/useme_1.jpg" alt="headshots" height="300" width="auto">
+    <p>Welcome to Danisproduxtion! I'm Megan Lindsey, a passionate photographer dedicated to capturing life's most beautiful moments. With over a decade of experience in family portraiture and creative storytelling, I bring both technical expertise and an artistic eye to every project. Whether it's a family gathering, a wedding, or a solo portrait session, I aim to deliver photos that tell your story authentically and beautifully.</p>
+  </section>
+
+  <!-- Problem Statement -->
+  <section class="problem-statement">
+    <h2>Why Choose Danisproduxtion?</h2>
+    <p>Finding a photographer who understands your vision can be challenging. At Danisproduxtion, we make the process easy and enjoyable. We listen to your needs, adapt to your style, and create a relaxed environment so your true personality shines through. Book with us today and experience photography that's personal, professional, and unforgettable.</p>
+  </section>
+
+  <!-- Book Your Session Section -->
+  <section class="problem-statement" id="booking">
+    <h2>Book Your Session</h2>
+    <p>Ready to book your photography session with Danisproduxtion? Contact us now or click the button below to schedule your shoot and let’s create memories together!</p>
+    <button id="contact-button">Contact Us to Book</button>
+  </section>
+
+  <!-- Popup for New Clients Discount -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>New Clients Get 15% Off!</h2>
+      <p>Book your first session with us and get 15% off your total price. Don’t miss out on this limited time offer!</p>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h2>Contact Info</h2>
+      <p>📍 1900 Glindas Ln, Emerald City, Fl 99999</p>
+      <p>📞 (555) 123-4567</p>
+      <p>📧 contact@danisproduxtion.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+      <p>Saturday: 10:00 AM - 4:00 PM</p>
+      <p>Sunday: Closed</p>
+      <h2>Follow Us</h2>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="icons for web project/instagram.png" alt="Instagram" width="40">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="icons for web project/facebook.png" alt="Facebook" width="40">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // jQuery for popup functionality
+    $(document).ready(function() {
+      // Show popup when Contact Us button is clicked
+      $('#contact-button').click(function() {
+        $('#popup').fadeIn();
+      });
+
+      // Close the popup when close button is clicked
+      $('#close-popup').click(function() {
+        $('#popup').fadeOut();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1311 @@
+  
+/*--body,nav,logo--*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    max-width: 1200px;
+  }
+
+  /* Nav Bar */
+  nav {
+    background-color: var(--dark-color);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--light-color);
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .logo img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Prevents extra spacing issues */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-left: 30px;
+  }
+
+  .nav-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+
+  /* Hero Image */
+  .heroabout {
+    width: 100%;
+    height: 400px;
+    background-image: url('images/newborns/mom_dad_kayden_.JPEG');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+
+  /* About Me Section */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; /* Align everything to center */
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    background-color: var(--light-color);
+    text-align: center; 
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px; 
+  }
+  
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    object-fit: cover;
+  }
+  
+
+  /* Problem Statement */
+  .problem-statement {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Image Grid */
+  .image-grid {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--dark-color);
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .social-media a {
+    color: var(--light-color);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social-media a:hover {
+    color: #ffffff;
+  }
+
+  /* Utility */
+  h1, h2 {
+    color: var(--dark-color);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-img {
+      float: none;
+      margin: 0 auto 20px;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  /*--Contactpage--*/
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+
+  nav {
+    background-color: var(--dark-color);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--light-color);
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-left: 30px;
+  }
+
+  .nav-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+
+  .herocon {
+    width: 100%;
+    height: 350px;
+    background-image: url('images/Jaquezcrew/IMG_0126.JPG');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--dark-color);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+form label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+  label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #4a2638;
+  }
+/* Client Reviews Section */
+.client-reviews {
+  background-color: var(--light-color);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.client-reviews h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.review {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.review p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review h4 {
+  color: var(--dark-color);
+  font-weight: normal;
+}
+
+/* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .social-media a {
+    color: var(--light-color);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social-media a:hover {
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  /*--Portfoliopage--*/
+  
+  .heroport {
+    width: 100%;
+    height: 300px;
+    background-image:  url('images/Jaquezcrew/boyslindsey1.jpeg');height: 500px; width: auto;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--dark-color);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-gallery {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .social-media a {
+    color: var(--light-color);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social-media a:hover {
+    color: #ffffff;
+  }
+
+  /* Utility */
+  h1, h2 {
+    color: var(--dark-color);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+
+  .social-media a {
+    color: var(--light-color);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social-media a:hover {
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  /*--bookingpage--*/
+  
+  /* Base Colors */
+  :root {
+    --dark-color: #351c2b;
+    --light-color: #e2c9bc;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+
+  /* Nav Bar */
+  nav {
+    background-color: var(--dark-color);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--light-color);
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-left: 30px;
+  }
+
+  .nav-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+
+  /* Hero */
+  .herobook {
+    width: 100%;
+    height: 200px;
+    background-image: url('images/newborns/fam02\ copy.jpg');height: 600px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+    /* Hero  slideshow images */
+  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+  .dropdown-images img {
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--dark-color);
+  }
+  /* Headings */
+  h1 {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Booking Form */
+  .booking-container {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 40px;
+   
+  
+  }
+
+  button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+  }
+
+  /* Carousel Simulation in Dropdown */
+  .dropdown-container {
+    box-sizing:border-box;
+    position: relative;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+  .dropdown-images img {
+    width:150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--dark-color);
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .social-media a {
+    color: var(--light-color);
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .social-media a:hover {
+    color: #ffffff;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+   /* homepage */
+  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #351c2b;
+   
+    padding: 15px 50px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+.herohome {
+    background: url('images/Jaquezcrew/mia02.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff
+}
+
+.heroport h1 {
+    font-size: 48px;
+    margin-bottom: 70px;
+  
+    color: #fff;
+}
+
+.heroport p {
+    font-size: 20px;
+    margin-bottom: 100px;
+    
+}
+
+.cta-button {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d56257;
+}
+
+.sessions, .reviews, .about, .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(235, 228, 228, 0.2);
+}
+
+.review {
+    background:#f6f5f5;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #351c2b;
+    color:#e2c9bc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+/* Popup Modal */
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content .cta-button {
+  background-color: #222;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ /* Flex/Grid Layout for booking-container */
+ .booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.booking-container form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.dropdown-container,
+.pricing-section {
+  margin-top: 2rem;
+}
+
+.pricing-section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.pricing-option {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+/* Slideshow Flex Layout */
+.dropdown-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .booking-container form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .booking-container form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-container form label,
+  .booking-container form input,
+  .booking-container form textarea {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .dropdown-container,
+  .pricing-section {
+    padding: 0.5rem;
+  }
+}
+
+/* Carousel Controls */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+    /* Flex/Grid Layout for booking-container */
+    .booking-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .booking-container form {
+      display: grid;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .dropdown-container,
+    .pricing-section {
+      margin-top: 2rem;
+    }
+
+    .pricing-section {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .pricing-option {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0;
+    }
+
+    /* Slideshow Flex Layout */
+    .dropdown-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .booking-container form {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .booking-container form {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .booking-container form label,
+      .booking-container form input,
+      .booking-container form textarea {
+        grid-column: span 2;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      .dropdown-container,
+      .pricing-section {
+        padding: 0.5rem;
+      }
+    }
+
+    /* Carousel Controls */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+     /* Popup Styles */
+     .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .popup button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
